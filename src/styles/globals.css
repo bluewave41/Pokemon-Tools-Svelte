@@ -1,0 +1,101 @@
+/* 1. Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+	margin: 0;
+}
+
+body {
+	/* 3. Add accessible line-height */
+	line-height: 1.5;
+	/* 4. Improve text rendering */
+	-webkit-font-smoothing: antialiased;
+}
+
+/* 5. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+	display: block;
+	max-width: 100%;
+}
+
+/* 6. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+
+/* 7. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	overflow-wrap: break-word;
+}
+
+/* 8. Improve line wrapping */
+p {
+	text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	text-wrap: balance;
+}
+
+/*
+	9. Create a root stacking context
+*/
+#root,
+#__next {
+	isolation: isolate;
+}
+
+html {
+	background-color: black;
+	color: var(--copy);
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root {
+	--primary: #25408e;
+	--primary-content: #c3ceef;
+	--primary-dark: #1a2e66;
+	--primary-light: #3052b6;
+
+	--secondary: #8e2540;
+	--secondary-content: #efc3ce;
+	--secondary-dark: #661a2e;
+	--secondary-light: #b63052;
+
+	--background: #18191b;
+	--foreground: #232529;
+	--border: #3b3d45;
+
+	--copy: #fbfbfb;
+	--copy-light: #d6d7dc;
+	--copy-lighter: #9fa2ac;
+
+	--success: #258e25;
+	--warning: #8e8e25;
+	--error: #8e2525;
+	--success-content: #c3efc3;
+	--warning-content: #000000;
+	--error-content: #efc3c3;
+}
